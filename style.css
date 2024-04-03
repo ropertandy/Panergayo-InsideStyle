@@ -5,7 +5,7 @@
     --clr-primary: #1b8b83;
     --clr-secondary: #cfa584;
     --clr-semilight: #d9d9d9;
-    --font: "Truculenta", sans-serif;
+    --font: "truculenta", sans-serif;
 }
 *{
   -webkit-box-sizing: border-box;
@@ -435,7 +435,7 @@ font-weight: 700;
 }
 /* ABOUT PAGE BANNER */
 .aboutBanner{
-  padding: 3rem;
+  padding: 3rem 0;
   background-color: var(--clr-light);
 }
 
@@ -452,12 +452,13 @@ font-weight: 700;
   justify-content: center;
   align-items: center;
   gap: 5rem;
+  max-width: 100;
   }
   .aboutBanner__right{
     max-width: 85rem;
   }
-  .aboutBanner h2{
-   font-size: 7rem; 
+  .aboutBanner h1{
+   font-size: 4rem; 
    font-weight: 700;
    letter-spacing: 2rem;
    margin-bottom: 2.5rem;
@@ -482,10 +483,22 @@ font-weight: 700;
  position: relative;
   content: " ";
   background-color: var(--clr-dark);
-  width: 35rem;
+  width: 36rem;
   height: .2rem;
   bottom: .5rem;
   right: 1rem;
+}
+/* ABOUT PAGE BANNER MOBILE */
+@media screen and (max-width: 520px){
+.aboutBanner__left{
+display: none;
+}
+.aboutBanner_right h1{
+  font-size: 2rem;
+}
+.aboutbanner_right ul li a{
+  font-size: 1.5rem;
+}
 }
 /* ABOUT CARDS */
 .aboutCard h1{
@@ -499,7 +512,7 @@ font-weight: 700;
   margin-top: 4rem;
 }
 .aboutCard{
- padding: 3rem;
+ padding: 3rem 0;
  background-color: var(--clr-dark);
   }
   .aboutCard__wrapper{
@@ -526,6 +539,51 @@ font-weight: 700;
     font-weight: 500rem;
     margin-bottom: 1rem;
   }
+  @media screen and (max-width: 520px){
+    .aboutCard__left{
+      display: none;
+  }
+  .aboutCard__wrapper{
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    }
+  } 
+/* CATALOG PAGE BANNER */
+.catalog__banner--bg{
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)),
+    url(./img/catalog-banner.png);
+  height: 100vh;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* to center the text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.catalogBanner h1{
+  font-size: 7rem;
+  font-weight: 700;
+  color: var(--clr-primary);
+}
+
+
+/* interior design package */
+.package__right h2{
+  color: var(--clr-primary);
+  font-size: 5rem;
+  font-weight: 700;
+}
+.package__left img{
+  width: 40rem;
+}
+.package__right p{
+  font-weight: 500rem;
+  margin-bottom: 1rem;
+}
 
 /* COMPONENTS */
 .btn{
