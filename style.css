@@ -369,7 +369,7 @@ margin-top: 4rem;
   color: var(--clr-secondary);
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: rem;
+  margin-bottom: 1rem;
 }
 .catalogSection__card--content p{
   margin-bottom: 1rem;
@@ -433,6 +433,99 @@ font-weight: 700;
     justify-content: center;
 }
 }
+/* ABOUT PAGE BANNER */
+.aboutBanner{
+  padding: 3rem;
+  background-color: var(--clr-light);
+}
+
+.aboutBanner__wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5rem;
+}
+ .aboutBanner{
+  padding: 3rem 0;
+  }
+  .aboutBanner__wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  }
+  .aboutBanner__right{
+    max-width: 85rem;
+  }
+  .aboutBanner h2{
+   font-size: 7rem; 
+   font-weight: 700;
+   letter-spacing: 2rem;
+   margin-bottom: 2.5rem;
+  }
+.aboutBanner__right p{
+  margin-bottom: 2rem;  
+  text-align: justify;
+}
+.aboutBanner__right ul{ 
+  display: flex;
+  gap: 1rem;
+}
+.aboutBanner ul li a{
+ color: var(--clr-dark);
+ font-style: 2.5rem;
+}
+ .aboutBanner__left small{
+  margin-left: 1rem;
+}
+.aboutBanner__left small::before{
+  display: inline-block;
+ position: relative;
+  content: " ";
+  background-color: var(--clr-dark);
+  width: 35rem;
+  height: .2rem;
+  bottom: .5rem;
+  right: 1rem;
+}
+/* ABOUT CARDS */
+.aboutCard h1{
+  color: var(--clr-primary);
+  font-size: 5rem;
+  font-weight: 700;
+}
+.aboutCard__card{
+  background: var(--clr-semilight);
+  max-width: 40rem;
+  margin-top: 4rem;
+}
+.aboutCard{
+ padding: 3rem;
+ background-color: var(--clr-dark);
+  }
+  .aboutCard__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+  }
+  .aboutCard__card img{
+    width: 40rem;
+  }
+  .aboutCard__card--content{
+    padding: 1rem;
+  }
+  .aboutCard__card--content h3{
+    color: var(--clr-secondary);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .aboutCard h4{
+    color: var(--clr-semilight);
+  }
+  .aboutCard__card--content p{
+    font-weight: 500rem;
+    margin-bottom: 1rem;
+  }
 
 /* COMPONENTS */
 .btn{
