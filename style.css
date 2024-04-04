@@ -204,6 +204,8 @@ gap: 2rem;
   transition: .5s ease;
  }
 }
+
+
 /* TOP */
 .top{
   background-color: var(--clr-secondary);
@@ -572,18 +574,84 @@ display: none;
 
 
 /* interior design package */
-.package__right h2{
-  color: var(--clr-primary);
+.package__wrapper h2 {
   font-size: 5rem;
   font-weight: 700;
+  color: var(--clr-primary);
+  text-align: center;
+  max-width: 100;
 }
-.package__left img{
-  width: 40rem;
+.package h2 {
+  color: var(--clr-primary);
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 3rem;
 }
-.package__right p{
-  font-weight: 500rem;
-  margin-bottom: 1rem;
+
+.package__theme {
+  padding: 5rem;
+  display: flex;
+  gap: 0.5rem;
 }
+.package__left {
+  width: 500rem;
+  margin-left: 10rem;
+  justify-content: center;
+}
+
+.package__right h2 {
+  color: var(--clr-primary);
+  display: flex;
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: center;
+  
+}
+.package__right p {
+  font-size: 2rem;
+  text-align: justify;
+  margin-left: 2.5rem;
+  margin-right: 19rem;
+}
+.package__theme:nth-child(odd){
+  background-color: var(--clr-semilight);
+  flex-direction: row-reverse;
+
+/* CONTACT SECTION */
+}
+.contactUs{
+  padding: 3rem 0;
+
+}
+.contactUs h1{
+font-size: 7rem;
+font-weight: 700;
+color: var(--clr-primary);
+}
+.contactUs p{
+font-size: 2rem;
+}
+.contactUs__left h4{
+  font-size: 2rem;
+  color: grey;
+}
+.btn.bg--semi-light-send{
+  background-color: var(--clr-dark);
+  color: var(--clear-light);
+  letter-spacing: 2rem;
+  text-align: center;
+
+}
+.btn.bg--semi-light-send:hover{
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
+  letter-spacing: 2rem;
+  text-align: center;
+
+}
+
+
 
 /* COMPONENTS */
 .btn{
